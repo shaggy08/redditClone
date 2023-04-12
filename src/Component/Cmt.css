@@ -1,0 +1,39 @@
+.cmt {
+  display: flex;
+}
+.collapse-line {
+  border: none;
+
+  box-shadow: none;
+  padding: 2px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.collapse-line:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+.cmt-cont {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cmt-header {
+  display: flex;
+  align-items: center;
+}
+.cmt-body {
+  font-weight: 800;
+}
+.cmt-footer {
+  display: flex;
+}
+.cmt-icon {
+  padding: 0.2rem;
+  margin-right: 1rem;
+}
+.hide {
+  display: none;
+}
