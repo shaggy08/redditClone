@@ -55,6 +55,10 @@ function Feed({ postId, setpostId }) {
 
   useEffect(() => {
     console.log("inside effect", postId);
+    if (!postId) {
+      console.log("null post id");
+      return;
+    }
     intervalIdRef.current = setInterval(() => {
       getCreatedPost(postId);
     }, 5000);
@@ -79,6 +83,7 @@ function Feed({ postId, setpostId }) {
             {postData.length > 0 ? (
               postData.map((post, id) => (
                 <Post
+                  key={id}
                   //   link={() => handleNavigate(post.id)}
                   title={post.requestParams.inputPrompt}
                   body={post.content.text}
